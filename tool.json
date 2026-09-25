@@ -1,0 +1,224 @@
+{
+  "tool": {
+    "id": "controle-da-asma-gina",
+    "title": "Controle dos sintomas da asma (GINA)",
+    "short": "Asma bem controlada, parcialmente ou não controlada",
+    "desc": "Avalie o controle dos sintomas da asma nas últimas 4 semanas pelas 4 perguntas da GINA: bem controlada, parcialmente controlada ou não controlada.",
+    "lead": "Classifica o controle dos sintomas da asma nas últimas 4 semanas em adultos, adolescentes e crianças de 6 a 11 anos, com as quatro perguntas da GINA.",
+    "spec": [
+      "alergia-e-imunologia",
+      "pneumologia",
+      "pediatria",
+      "medicina-de-familia-e-comunidade",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "diurno",
+        "Sintomas diurnos mais de 2 vezes por semana",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "noturno",
+        "Algum despertar noturno por asma",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "alivio",
+        "Uso de medicação de alívio (SABA) mais de 2 vezes por semana",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "limit",
+        "Alguma limitação de atividades pela asma",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Itens presentes (últimas 4 semanas)",
+      "unit": "de 4",
+      "bands": [
+        [
+          0,
+          "low",
+          "Asma bem controlada",
+          "Manter o tratamento; considerar reduzir etapa se controlada por 3 meses."
+        ],
+        [
+          1,
+          "mid",
+          "Asma parcialmente controlada",
+          "Revisar técnica inalatória, adesão, comorbidades e fatores de risco antes de subir etapa."
+        ],
+        [
+          3,
+          "high",
+          "Asma não controlada",
+          "Revisar técnica, adesão e gatilhos; considerar subir etapa do tratamento."
+        ]
+      ]
+    },
+    "formula": "<p>Nas últimas 4 semanas, conte quantos itens estão presentes: sintomas diurnos &gt; 2×/semana; despertar noturno por asma; SABA de alívio &gt; 2×/semana (não conta o uso antes de exercício); limitação de atividades.</p><p>0 = bem controlada · 1 a 2 = parcialmente controlada · 3 a 4 = não controlada.</p>",
+    "table": [
+      [
+        "Itens presentes",
+        "Controle dos sintomas"
+      ],
+      [
+        "0",
+        "Bem controlada"
+      ],
+      [
+        "1 a 2",
+        "Parcialmente controlada"
+      ],
+      [
+        "3 a 4",
+        "Não controlada"
+      ]
+    ],
+    "table_note": "Na criança de até 5 anos, a GINA usa perguntas adaptadas (sintomas diurnos &gt; alguns minutos mais de 1 vez por semana, alívio &gt; 1 vez por semana).",
+    "tips": [
+      "O controle dos sintomas é só metade da avaliação: avalie também o risco futuro de crises (crise grave no último ano, VEF₁ baixo, tabagismo, eosinofilia, técnica ruim, baixa adesão).",
+      "Antes de subir a etapa, confira técnica inalatória e adesão: são as causas mais comuns de asma \"não controlada\".",
+      "Pela GINA, não se recomenda tratar adultos e adolescentes só com SABA: use corticoide inalatório com formoterol como alívio ou associado a qualquer SABA.",
+      "Esta ferramenta usa as perguntas da própria GINA, de domínio público; questionários licenciados como o ACT não estão incluídos."
+    ],
+    "sources": [
+      [
+        "Reddel HK et al. Global Initiative for Asthma Strategy 2021: executive summary and rationale for key changes. Eur Respir J, 2022.",
+        "https://doi.org/10.1183/13993003.02730-2021"
+      ],
+      [
+        "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention (relatório anual).",
+        "https://ginasthma.org/reports/"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhum item: bem controlada",
+        [],
+        {
+          "score": 0,
+          "level": "low",
+          "verdict": "bem controlada"
+        }
+      ],
+      [
+        "Sintomas diurnos e SABA frequente: parcialmente controlada",
+        {
+          "diurno": true,
+          "alivio": true
+        },
+        {
+          "score": 2,
+          "level": "mid",
+          "verdict": "parcialmente"
+        }
+      ],
+      [
+        "Três itens: não controlada",
+        {
+          "diurno": true,
+          "noturno": true,
+          "alivio": true
+        },
+        {
+          "score": 3,
+          "level": "high",
+          "verdict": "não controlada"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 4",
+      "label": "Itens presentes (últimas 4 semanas)",
+      "fields": [
+        [
+          "diurno",
+          "chk",
+          1
+        ],
+        [
+          "noturno",
+          "chk",
+          1
+        ],
+        [
+          "alivio",
+          "chk",
+          1
+        ],
+        [
+          "limit",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Asma bem controlada",
+          "Manter o tratamento; considerar reduzir etapa se controlada por 3 meses."
+        ],
+        [
+          1,
+          "mid",
+          "Asma parcialmente controlada",
+          "Revisar técnica inalatória, adesão, comorbidades e fatores de risco antes de subir etapa."
+        ],
+        [
+          3,
+          "high",
+          "Asma não controlada",
+          "Revisar técnica, adesão e gatilhos; considerar subir etapa do tratamento."
+        ]
+      ]
+    },
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "label": "Nenhum item: bem controlada",
+    "input": {},
+    "expected": {
+      "score": 0,
+      "level": "low",
+      "verdict": "bem controlada"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sintomas diurnos e SABA frequente: parcialmente controlada",
+    "input": {
+      "diurno": true,
+      "alivio": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid",
+      "verdict": "parcialmente"
+    },
+    "originalInput": {
+      "diurno": true,
+      "alivio": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Três itens: não controlada",
+    "input": {
+      "diurno": true,
+      "noturno": true,
+      "alivio": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "high",
+      "verdict": "não controlada"
+    },
+    "originalInput": {
+      "diurno": true,
+      "noturno": true,
+      "alivio": true
+    },
+    "expandedZeroOptions": []
+  }
+]

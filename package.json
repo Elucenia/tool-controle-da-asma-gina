@@ -1,0 +1,19 @@
+{
+  "name": "@elucenia/tool-controle-da-asma-gina",
+  "version": "0.1.0",
+  "description": "Controle dos sintomas da asma (GINA)",
+  "main": "calculator.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-controle-da-asma-gina.git"
+  }
+}
