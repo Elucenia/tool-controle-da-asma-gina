@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-controle-da-asma-gina",
   "version": "0.1.0",
-  "description": "Controle dos sintomas da asma (GINA) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Controle dos sintomas da asma (GINA) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",

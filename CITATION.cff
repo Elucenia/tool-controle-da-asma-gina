@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Se usar este pacote em pesquisa, palestra ou produto, cite-o como abaixo."
-title: "tool-controle-da-asma-gina: Controle dos sintomas da asma (GINA) (Elucenia)"
+title: "tool-controle-da-asma-gina: Controle dos sintomas da asma (GINA) (ELUCENIA)"
 abstract: "Código de integração, sem dependências, que reproduz a fórmula ou escore Controle dos sintomas da asma (GINA) para navegador e Node.js, com casos de referência e testes. Reprodução técnica; sem validação clínica independente."
 type: software
 version: 0.1.0
@@ -16,7 +16,7 @@ authors:
     city: Toledo
     region: Paraná
     country: BR
-  - name: Elucenia
+  - name: ELUCENIA
     website: "https://elucenia.org"
 keywords:
   - elucenia
