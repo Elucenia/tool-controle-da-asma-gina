@@ -1,19 +1,42 @@
 {
   "name": "@elucenia/tool-controle-da-asma-gina",
   "version": "0.1.0",
-  "description": "Controle dos sintomas da asma (GINA)",
+  "description": "Controle dos sintomas da asma (GINA) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "keywords": [
+    "elucenia",
+    "medical-calculator",
+    "clinical-score",
+    "healthcare",
+    "zero-dependencies",
+    "controle-da-asma-gina"
+  ],
   "main": "calculator.js",
   "type": "commonjs",
-  "license": "MIT",
+  "files": [
+    "calculator.js",
+    "index.html",
+    "tool.json",
+    "examples.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "AUTHORSHIP.md",
+    "CITATION.cff"
+  ],
+  "author": "Felipe Guedes <contato@elucenia.org> (https://fgxdev.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://elucenia.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elucenia/tool-controle-da-asma-gina.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elucenia/tool-controle-da-asma-gina/issues"
+  },
   "scripts": {
     "test": "node test.cjs"
   },
   "engines": {
     "node": ">=18"
-  },
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Elucenia/tool-controle-da-asma-gina.git"
   }
 }

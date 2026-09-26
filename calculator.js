@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-controle-da-asma-gina · Elucenia · https://github.com/Elucenia/tool-controle-da-asma-gina
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"controle-da-asma-gina","title":"Controle dos sintomas da asma (GINA)","fields":[["diurno","Sintomas diurnos mais de 2 vezes por semana","chk",{"pts":1}],["noturno","Algum despertar noturno por asma","chk",{"pts":1}],["alivio","Uso de medicação de alívio (SABA) mais de 2 vezes por semana","chk",{"pts":1}],["limit","Alguma limitação de atividades pela asma","chk",{"pts":1}]],"config":{"unit":"de 4","label":"Itens presentes (últimas 4 semanas)","fields":[["diurno","chk",1],["noturno","chk",1],["alivio","chk",1],["limit","chk",1]],"bands":[[0,"low","Asma bem controlada","Manter o tratamento; considerar reduzir etapa se controlada por 3 meses."],[1,"mid","Asma parcialmente controlada","Revisar técnica inalatória, adesão, comorbidades e fatores de risco antes de subir etapa."],[3,"high","Asma não controlada","Revisar técnica, adesão e gatilhos; considerar subir etapa do tratamento."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
