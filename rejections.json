@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean diurno",
+    "input": {
+      "diurno": "2",
+      "noturno": false,
+      "alivio": false,
+      "limit": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "diurno"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean noturno",
+    "input": {
+      "diurno": false,
+      "noturno": "2",
+      "alivio": false,
+      "limit": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "noturno"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean alivio",
+    "input": {
+      "diurno": false,
+      "noturno": false,
+      "alivio": "2",
+      "limit": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "alivio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean limit",
+    "input": {
+      "diurno": false,
+      "noturno": false,
+      "alivio": false,
+      "limit": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "limit"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

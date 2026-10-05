@@ -5,6 +5,7 @@
     "short": "Asma bem controlada, parcialmente ou não controlada",
     "desc": "Avalie o controle dos sintomas da asma nas últimas 4 semanas pelas 4 perguntas da GINA: bem controlada, parcialmente controlada ou não controlada.",
     "lead": "Classifica o controle dos sintomas da asma nas últimas 4 semanas em adultos, adolescentes e crianças de 6 a 11 anos, com as quatro perguntas da GINA.",
+    "kind": "Escore",
     "spec": [
       "alergia-e-imunologia",
       "pneumologia",
@@ -12,91 +13,33 @@
       "medicina-de-familia-e-comunidade",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "diurno",
         "Sintomas diurnos mais de 2 vezes por semana",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "noturno",
         "Algum despertar noturno por asma",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "alivio",
         "Uso de medicação de alívio (SABA) mais de 2 vezes por semana",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "limit",
         "Alguma limitação de atividades pela asma",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Itens presentes (últimas 4 semanas)",
-      "unit": "de 4",
-      "bands": [
-        [
-          0,
-          "low",
-          "Asma bem controlada",
-          "Manter o tratamento; considerar reduzir etapa se controlada por 3 meses."
-        ],
-        [
-          1,
-          "mid",
-          "Asma parcialmente controlada",
-          "Revisar técnica inalatória, adesão, comorbidades e fatores de risco antes de subir etapa."
-        ],
-        [
-          3,
-          "high",
-          "Asma não controlada",
-          "Revisar técnica, adesão e gatilhos; considerar subir etapa do tratamento."
-        ]
-      ]
-    },
     "formula": "<p>Nas últimas 4 semanas, conte quantos itens estão presentes: sintomas diurnos &gt; 2×/semana; despertar noturno por asma; SABA de alívio &gt; 2×/semana (não conta o uso antes de exercício); limitação de atividades.</p><p>0 = bem controlada · 1 a 2 = parcialmente controlada · 3 a 4 = não controlada.</p>",
-    "table": [
-      [
-        "Itens presentes",
-        "Controle dos sintomas"
-      ],
-      [
-        "0",
-        "Bem controlada"
-      ],
-      [
-        "1 a 2",
-        "Parcialmente controlada"
-      ],
-      [
-        "3 a 4",
-        "Não controlada"
-      ]
-    ],
-    "table_note": "Na criança de até 5 anos, a GINA usa perguntas adaptadas (sintomas diurnos &gt; alguns minutos mais de 1 vez por semana, alívio &gt; 1 vez por semana).",
-    "tips": [
-      "O controle dos sintomas é só metade da avaliação: avalie também o risco futuro de crises (crise grave no último ano, VEF₁ baixo, tabagismo, eosinofilia, técnica ruim, baixa adesão).",
-      "Antes de subir a etapa, confira técnica inalatória e adesão: são as causas mais comuns de asma \"não controlada\".",
-      "Pela GINA, não se recomenda tratar adultos e adolescentes só com SABA: use corticoide inalatório com formoterol como alívio ou associado a qualquer SABA.",
-      "Esta ferramenta usa as perguntas da própria GINA, de domínio público; questionários licenciados como o ACT não estão incluídos."
-    ],
     "sources": [
       [
         "Reddel HK et al. Global Initiative for Asthma Strategy 2021: executive summary and rationale for key changes. Eur Respir J, 2022.",
@@ -143,54 +86,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 4",
-      "label": "Itens presentes (últimas 4 semanas)",
-      "fields": [
-        [
-          "diurno",
-          "chk",
-          1
-        ],
-        [
-          "noturno",
-          "chk",
-          1
-        ],
-        [
-          "alivio",
-          "chk",
-          1
-        ],
-        [
-          "limit",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Asma bem controlada",
-          "Manter o tratamento; considerar reduzir etapa se controlada por 3 meses."
-        ],
-        [
-          1,
-          "mid",
-          "Asma parcialmente controlada",
-          "Revisar técnica inalatória, adesão, comorbidades e fatores de risco antes de subir etapa."
-        ],
-        [
-          3,
-          "high",
-          "Asma não controlada",
-          "Revisar técnica, adesão e gatilhos; considerar subir etapa do tratamento."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -199,17 +94,152 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T00:48:48.914Z",
+      "total": 16,
+      "passed": 16,
+      "evidencePath": "reports/review-20261003/additional-native-scoring-source-oracles-final19.json",
+      "evidenceSha256": "8f1eeb174b60822ed95db7c00b389f25d9f5ec4d1eb592cf2c9eaeebccd0717a",
+      "scope": "All16 combinations of the four recorded symptom-control questions. This numerical sum does not test asthma diagnosis, future risk or treatment. The symptom period is four weeks; the reliever question is specifically SABA.",
+      "source": {
+        "edition": "GINA2021 Pocket Guide",
+        "url": "https://ginasthma.org/wp-content/uploads/2021/04/Main-Pocket-Guide-2021-FINAL-WM.pdf",
+        "locator": "PDF p14, Box4A",
+        "access": "Official47-page PDF opened; Box4A and adjacent scope paragraphs read, not the complete guideline.",
+        "scope": "All16 combinations of the four recorded symptom-control questions. This numerical sum does not test asthma diagnosis, future risk or treatment. The symptom period is four weeks; the reliever question is specifically SABA.",
+        "rights": "Copyright restriction on copied/distributed guide observed. No ELUCENIA adaptation permission is established."
+      },
+      "executionBuild": {
+        "id": "IguaqI9wAzb-9t1Sb-4Ph",
+        "directory": ".next-private-final19"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "fullSourceConformanceApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "GINA estratégia 2021:controle sintomas 4 semanas,4 perguntas; alívio SABA; 0/1–2/3–4",
+    "implementationVersion": "controle-da-asma-gina@native-2026-10-03+bf83371b62c3",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8719459/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Nas últimas 4 semanas, conte quantos itens estão presentes: sintomas diurnos > 2×/semana; despertar noturno por asma; SABA de alívio > 2×/semana (não conta o uso antes de exercício); limitação de atividades. 0 = bem controlada · 1 a 2 = parcialmente controlada · 3 a 4 = não controlada.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "diurno",
+            "label": "Sintomas diurnos mais de 2 vezes por semana",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "noturno",
+            "label": "Algum despertar noturno por asma",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alivio",
+            "label": "Uso de medicação de alívio (SABA) mais de 2 vezes por semana",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "limit",
+            "label": "Alguma limitação de atividades pela asma",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "ce798766302d30c728b6ba43043cb2ad576aeea4a1b05cfaaa33e055aab42a8d"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Reddel HK et al. Global Initiative for Asthma Strategy 2021: executive summary and rationale for key changes. Eur Respir J, 2022.",
+          "url": "https://doi.org/10.1183/13993003.02730-2021",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Global Initiative for Asthma Strategy 2021: executive summary and rationale for key changes.",
+            "year": "2022",
+            "firstPublicationDate": "2021-12-31",
+            "doi": "10.1183/13993003.02730-2021",
+            "pmid": "34667060",
+            "pmcid": "PMC8719459",
+            "journal": "The European respiratory journal",
+            "authors": "Reddel HK, Bacharier LB, Bateman ED, Brightling CE, Brusselle GG, Buhl R, Cruz AA, Duijts L, Drazen JM, FitzGerald JM, Fleming LJ, Inoue H, Ko FW, Krishnan JA, Levy ML, Lin J, Mortimer K, Pitrez PM, Sheikh A, Yorgancioglu AA, Boulet LP."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8719459/",
+          "abstractAvailable": false,
+          "fullTextSha256": "4648f83d78034eeed67c21677bf479bea547ec2cfee55626c5ff4b1e21518c59",
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention (relatório anual).",
+          "url": "https://ginasthma.org/reports/",
+          "class": "institutional-current-edition-and-use-terms-page-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "Current page lists 2026; implemented symptom-control questions are documented by the cited 2021 strategy, not automatically approved as the 2026 edition.",
+          "conditions": "Copies, adaptations or redistribution of GINA documents require authorization. No authorization was obtained."
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T00:48:48.914Z",
+        "total": 16,
+        "passed": 16,
+        "evidencePath": "reports/review-20261003/additional-native-scoring-source-oracles-final19.json",
+        "evidenceSha256": "8f1eeb174b60822ed95db7c00b389f25d9f5ec4d1eb592cf2c9eaeebccd0717a",
+        "scope": "All16 combinations of the four recorded symptom-control questions. This numerical sum does not test asthma diagnosis, future risk or treatment. The symptom period is four weeks; the reliever question is specifically SABA."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0"
+    },
+    "limits": "A avaliação GINA 2021 aqui calculada cobre controle de sintomas nas últimas quatro semanas em adultos e crianças maiores de 5 anos, com a pergunta de alívio referente a SABA. Essa contagem não avalia todo o risco futuro de exacerbação, função pulmonar, comorbidades, técnica inalatória ou adesão. Controle sintomático e gravidade da asma não são equivalentes. A adaptação do material permanece sujeita às condições de direitos do titular.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.775Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Artigo executivo sem resumo na consulta. A raiz informou leitura do Pocket Guide 2021 páginas 14–15, a ser vinculada ao inventário com escopo e aviso de direitos explícitos. Não transferir automaticamente para versões anuais posteriores.",
+        "Aviso de copyright observado; nenhuma permissão de adaptação estabelecida. Não foi lida a estratégia completa; exclusão de SABA pré-exercício foi informada pela raiz, não demonstrada no extrato desta página."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/controle-da-asma-gina/calculator.js",
+    "bytes": 4880,
+    "sha256": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "f6b5b008c4ba0c9ad9264ed254ed5dbf5ba0a8802abfce99e7e1209054bcf712",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 16,
+      "sha256": "83dc0d4610e3de81c12a767b6064899724b83762197fe0d8b4f00a431bc33279",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
