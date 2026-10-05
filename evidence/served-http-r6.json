@@ -1,0 +1,678 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "controle-da-asma-gina",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/controle-da-asma-gina/calculator.js",
+    "sha256": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0",
+    "bytes": 4880
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "controle-da-asma-gina",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Nenhum item: bem controlada",
+      "originalInput": [],
+      "input": {
+        "diurno": false,
+        "noturno": false,
+        "alivio": false,
+        "limit": false
+      },
+      "amendments": [
+        {
+          "kind": "recorded-array-to-field-object",
+          "original": []
+        },
+        {
+          "field": "diurno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "noturno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "alivio",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "limit",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 0,
+        "level": "low",
+        "verdict": "bem controlada"
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "raw": {
+          "score": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "diurno": false,
+            "noturno": false,
+            "alivio": false,
+            "limit": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+          "startedAt": "2026-10-05T17:36:17.205Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "controle-da-asma-gina",
+              "main": [
+                "0",
+                "de 4"
+              ],
+              "label": "Itens presentes (últimas 4 semanas)",
+              "raw": {
+                "score": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "10d478f1b226801da3cf97f2aae12308878638e3353fbd10bbb30cd2b0d58304",
+          "bytes": 163,
+          "elapsedMs": 7.400999999998021
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+        "startedAt": "2026-10-05T17:36:17.205Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "controle-da-asma-gina",
+            "main": [
+              "0",
+              "de 4"
+            ],
+            "label": "Itens presentes (últimas 4 semanas)",
+            "raw": {
+              "score": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "10d478f1b226801da3cf97f2aae12308878638e3353fbd10bbb30cd2b0d58304",
+        "bytes": 163,
+        "elapsedMs": 7.400999999998021
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 4",
+            "obtained": "de 4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "controle-da-asma-gina",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Sintomas diurnos e SABA frequente: parcialmente controlada",
+      "originalInput": {
+        "diurno": true,
+        "alivio": true
+      },
+      "input": {
+        "diurno": true,
+        "alivio": true,
+        "noturno": false,
+        "limit": false
+      },
+      "amendments": [
+        {
+          "field": "noturno",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "limit",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 2,
+        "level": "mid",
+        "verdict": "parcialmente"
+      },
+      "recordedResult": {
+        "main": [
+          "2",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "raw": {
+          "score": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "diurno": true,
+            "alivio": true,
+            "noturno": false,
+            "limit": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+          "startedAt": "2026-10-05T17:36:17.519Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "controle-da-asma-gina",
+              "main": [
+                "2",
+                "de 4"
+              ],
+              "label": "Itens presentes (últimas 4 semanas)",
+              "raw": {
+                "score": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "60b7d97c71de18a83b93c96df81dcbab035ec177dee9523a6d0f4eea422f57b4",
+          "bytes": 163,
+          "elapsedMs": 5.360300000000279
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+        "startedAt": "2026-10-05T17:36:17.519Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "controle-da-asma-gina",
+            "main": [
+              "2",
+              "de 4"
+            ],
+            "label": "Itens presentes (últimas 4 semanas)",
+            "raw": {
+              "score": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "60b7d97c71de18a83b93c96df81dcbab035ec177dee9523a6d0f4eea422f57b4",
+        "bytes": 163,
+        "elapsedMs": 5.360300000000279
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2",
+            "obtained": "2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 4",
+            "obtained": "de 4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "controle-da-asma-gina",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Três itens: não controlada",
+      "originalInput": {
+        "diurno": true,
+        "noturno": true,
+        "alivio": true
+      },
+      "input": {
+        "diurno": true,
+        "noturno": true,
+        "alivio": true,
+        "limit": false
+      },
+      "amendments": [
+        {
+          "field": "limit",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 3,
+        "level": "high",
+        "verdict": "não controlada"
+      },
+      "recordedResult": {
+        "main": [
+          "3",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "raw": {
+          "score": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "diurno": true,
+            "noturno": true,
+            "alivio": true,
+            "limit": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+          "startedAt": "2026-10-05T17:36:17.819Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "controle-da-asma-gina",
+              "main": [
+                "3",
+                "de 4"
+              ],
+              "label": "Itens presentes (últimas 4 semanas)",
+              "raw": {
+                "score": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ff776e3a45af389d3993e5c95ee03c4b541e329167b889dd1076ba6c12497941",
+          "bytes": 163,
+          "elapsedMs": 3.3228999999992084
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/controle-da-asma-gina/calculate",
+        "startedAt": "2026-10-05T17:36:17.819Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "controle-da-asma-gina",
+            "main": [
+              "3",
+              "de 4"
+            ],
+            "label": "Itens presentes (últimas 4 semanas)",
+            "raw": {
+              "score": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ff776e3a45af389d3993e5c95ee03c4b541e329167b889dd1076ba6c12497941",
+        "bytes": 163,
+        "elapsedMs": 3.3228999999992084
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3",
+            "obtained": "3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 4",
+            "obtained": "de 4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
