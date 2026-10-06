@@ -71,3 +71,28 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Gut kontrolliertes Asthma
+
+Behandlung beibehalten; erwägen, die Stufe zu reduzieren, wenn seit 3 Monaten kontrolliert.
+
+
+### 2
+
+Teilweise kontrolliertes Asthma
+
+Inhalationstechnik, Adhärenz, Komorbiditäten und Risikofaktoren vor der Eskalation überprüfen.
+
+
+### 3
+
+Nicht kontrolliertes Asthma
+
+Technik, Adhärenz und Auslöser überprüfen; eine Eskalation der Behandlung erwägen.
+

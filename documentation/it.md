@@ -71,3 +71,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Asma ben controllata
+
+Mantenere il trattamento; considerare di ridurre il gradino se controllata per 3 mesi.
+
+
+### 2
+
+Asma parzialmente controllata
+
+Rivedere la tecnica inalatoria, l’aderenza, le comorbidità e i fattori di rischio prima di salire di gradino.
+
+
+### 3
+
+Asma non controllata
+
+Rivedere tecnica, aderenza e fattori scatenanti; considerare di salire di gradino del trattamento.
+

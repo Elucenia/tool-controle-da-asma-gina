@@ -119,7 +119,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "GINA estratégia 2021:controle sintomas 4 semanas,4 perguntas; alívio SABA; 0/1–2/3–4",
-    "implementationVersion": "controle-da-asma-gina@native-2026-10-03+bf83371b62c3",
+    "implementationVersion": "controle-da-asma-gina@native-2026-10-05+cb00a4666920",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8719459/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -208,7 +208,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0"
+      "implementationHash": "cb00a4666920398119e9d7b99a1ce8ceb512f65186e9885f94d3684a90b77ad9",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "controle-da-asma-gina@native-2026-10-03+bf83371b62c3",
+          "previousImplementationHash": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0",
+          "implementationHash": "cb00a4666920398119e9d7b99a1ce8ceb512f65186e9885f94d3684a90b77ad9",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "ce798766302d30c728b6ba43043cb2ad576aeea4a1b05cfaaa33e055aab42a8d",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A avaliação GINA 2021 aqui calculada cobre controle de sintomas nas últimas quatro semanas em adultos e crianças maiores de 5 anos, com a pergunta de alívio referente a SABA. Essa contagem não avalia todo o risco futuro de exacerbação, função pulmonar, comorbidades, técnica inalatória ou adesão. Controle sintomático e gravidade da asma não são equivalentes. A adaptação do material permanece sujeita às condições de direitos do titular.",
     "sourceLimitEvidence": {
@@ -228,15 +256,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/controle-da-asma-gina/calculator.js",
-    "bytes": 4880,
-    "sha256": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0"
+    "bytes": 5085,
+    "sha256": "cb00a4666920398119e9d7b99a1ce8ceb512f65186e9885f94d3684a90b77ad9"
   },
-  "sourceToolSha256": "f6b5b008c4ba0c9ad9264ed254ed5dbf5ba0a8802abfce99e7e1209054bcf712",
+  "sourceToolSha256": "990118919f6a8f0d17c4ce7c0941b302f7928868b7333f20d9b51fe6c8567408",
   "omittedFullReferenceBanks": [
     {
       "rows": 16,
       "sha256": "83dc0d4610e3de81c12a767b6064899724b83762197fe0d8b4f00a431bc33279",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

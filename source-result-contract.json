@@ -1,0 +1,175 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "controle-da-asma-gina",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "e6a5087c303fb36ce464ed28a609cc39329804ab",
+    "oldEngineSha256": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0",
+    "currentEngineSha256": "cb00a4666920398119e9d7b99a1ce8ceb512f65186e9885f94d3684a90b77ad9"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Nenhum item: bem controlada",
+      "input": {
+        "diurno": false,
+        "noturno": false,
+        "alivio": false,
+        "limit": false
+      },
+      "publicOutput": {
+        "id": "controle-da-asma-gina",
+        "main": [
+          "0",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low",
+        "verdict": "bem controlada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "level": "low",
+        "verdict": "Asma bem controlada",
+        "note": "Manter o tratamento; considerar reduzir etapa se controlada por 3 meses.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Sintomas diurnos e SABA frequente: parcialmente controlada",
+      "input": {
+        "diurno": true,
+        "alivio": true,
+        "noturno": false,
+        "limit": false
+      },
+      "publicOutput": {
+        "id": "controle-da-asma-gina",
+        "main": [
+          "2",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid",
+        "verdict": "parcialmente"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "level": "mid",
+        "verdict": "Asma parcialmente controlada",
+        "note": "Revisar técnica inalatória, adesão, comorbidades e fatores de risco antes de subir etapa.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Três itens: não controlada",
+      "input": {
+        "diurno": true,
+        "noturno": true,
+        "alivio": true,
+        "limit": false
+      },
+      "publicOutput": {
+        "id": "controle-da-asma-gina",
+        "main": [
+          "3",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high",
+        "verdict": "não controlada"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 4"
+        ],
+        "label": "Itens presentes (últimas 4 semanas)",
+        "level": "high",
+        "verdict": "Asma não controlada",
+        "note": "Revisar técnica, adesão e gatilhos; considerar subir etapa do tratamento.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

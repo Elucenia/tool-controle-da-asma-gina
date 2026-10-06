@@ -1,6 +1,6 @@
 {
   "id": "controle-da-asma-gina",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 4880,
-      "sha256": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0"
+      "bytes": 5085,
+      "sha256": "cb00a4666920398119e9d7b99a1ce8ceb512f65186e9885f94d3684a90b77ad9"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1107,
-      "sha256": "44467ceaa4d8ffdab9113822c17cece38496a1af857469e2d5168882c309091b"
+      "bytes": 1376,
+      "sha256": "cf74548180b92b6707f9648670d41354ede34c3eb067640afb707f3fa39cc1a9"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4301,
-      "sha256": "59321d56bc1c45ca1ae9ccd1bb3b76c2c951ccf99b889fe53a3599720bb75c6d"
+      "bytes": 5008,
+      "sha256": "5ed7ae72b994846162ed4532b907b390b6bbfdfeaab086e4f95c4438933764a2"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3472,
-      "sha256": "9caa1d74ab6f7374ab0d406890150ef23316832ad8aace09d13e0c4592b8611d"
+      "bytes": 4041,
+      "sha256": "50c1813f3ac942e8b25ccc533dc055620ec78a19fee531fcdc438d97b8bd35d7"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3076,
-      "sha256": "b6c203ffdec4d6aa5fc8c520c85a28f7d63817617c01d546c26d388e6cb29c87"
+      "bytes": 3562,
+      "sha256": "ba7b658e7ba5f1fb8aa28399cd603f6be5991a4d8932bf0e99037a258e93425b"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3411,
-      "sha256": "7f1526a88341d12c24c12feb127a8a680893b055accd89d6ba5fcdfc6938a3f0"
+      "bytes": 3995,
+      "sha256": "2cb72b325551c964fdbc1df3c72c45305818f611c805f6bdc1b71fa6e6bbeaa9"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3599,
-      "sha256": "d7e435cde7a765decfd44a54ea3bfa18077917ae913f69e890b2d2f133356c0a"
+      "bytes": 4274,
+      "sha256": "a193671545a2fbcfe15342848be4251ab3cef6e5dd2fb2be9ed58f28c4370356"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6220,
-      "sha256": "e546e8947367f8a64a74c7b1349d8aea7fa2b7720727780efceae4f3b5ac36d3"
+      "bytes": 7459,
+      "sha256": "4a793ccb52ed0645188c07b23cf2b723e68b173a00dcf9053dbdf697f0d6e063"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3406,
-      "sha256": "9f249d55390e4c4484c8367a0e6964e8d959ff5bdce307b81975e29156ad9222"
+      "bytes": 3970,
+      "sha256": "f1ee598d686a94855d82460a3ab71b9c18a4d08e8f2319c9f7a53bff1805ad3e"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3437,
-      "sha256": "319bfec1698d62bb21c337f26065ebeb2f07b628a8e87435bc5fa509c64374b2"
+      "bytes": 4105,
+      "sha256": "681726a027f7a1069ff2c0c79d785ebb666502157290809a2c23b6607e99ef9d"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3255,
-      "sha256": "eae3bf9f28c0e61e49a5f28b554b78dafa9a84f357d14d8d0e02c582aa946ac1"
+      "bytes": 3760,
+      "sha256": "c2bcebe4f3cefb66dec906f341ba9736b4495c9f36cd72cad880f42ab5409cd8"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 2691,
-      "sha256": "e470b3b89681d88c4de653e0b802ac6e48b2dba8dfc09b5899c76f35e1563f6d"
+      "bytes": 3083,
+      "sha256": "de56f594b9c4bf7df1b2dd28d2a40566508c9e8cf9b4fca286d1c59d8f7d1459"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 18232,
+      "sha256": "61c97fa05b749dc3115f55711ff5991f2e0e5aaf570cd18fd93fe8d40e47660a"
     },
     {
       "path": "engine/tool-code/controle-da-asma-gina/calculator.js",
-      "bytes": 4880,
-      "sha256": "bf83371b62c3a9b0127c78c9fb881db3e7f71f85f35b8bc270d2634afb40feb0"
+      "bytes": 5085,
+      "sha256": "cb00a4666920398119e9d7b99a1ce8ceb512f65186e9885f94d3684a90b77ad9"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2819,
       "sha256": "b6659c6c42ec5bc29aadef82afe306892169a6f890cac7f3a12f96d09a3dcfbe"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 11940,
+      "sha256": "e047d134323b6d7ba4c70e043cef38d4caf36b69deea1dcadb4d316cece2b239"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 43510,
-      "sha256": "b450a1b1c8f38ccb1f9239575d8119bd9d26bbdd941b3ebb2a268f5ada2bcafd"
+      "bytes": 56663,
+      "sha256": "8b5813816230733710fedb22bedec8b2aa7c203426f6d37988a784c281c7a5bc"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 385,
-      "sha256": "29605cb3b48f1337cb1c825fdc2d64ad6a0efe921c77df4d0050f48759f9b323"
+      "bytes": 479,
+      "sha256": "528957a0579dce29b41644c7ca02f95dbb01f4ed6a8e6e8af988ddc51675b73c"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 11940,
-      "sha256": "e047d134323b6d7ba4c70e043cef38d4caf36b69deea1dcadb4d316cece2b239"
+      "bytes": 6390,
+      "sha256": "30f51d250bd5ed96e27a73eb94bb882afe3970a7f3054662258aa73ceecf6953"
     },
     {
       "path": "README.md",
-      "bytes": 3177,
-      "sha256": "b3614f6e054d51dd9b19fa78da55e8a41e448c567110ea062eebf1b74bc77733"
+      "bytes": 3765,
+      "sha256": "449ca1cbd39a1b25f372237b9bfb59a632a5174bd05ed7536f08f56a9f110915"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 4970,
+      "sha256": "88223069b8ee11091fe6d9fef5af176b48100f6805dceaa06b51f2aaf37bcf45"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1682,
       "sha256": "7fd9f490bba082ac73daa0312f954628024c48f87aa6f40983abb868268e2018"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 11632,
-      "sha256": "f50761d5846348c9a45a0fd48d6b5c31277590d361b2ad8dd01d0b1648435792"
+      "bytes": 13152,
+      "sha256": "0f2f54d830a2ef0517db1409fcfb2996a273373f2458f0e2ef361851ef04243a"
     }
   ]
 }

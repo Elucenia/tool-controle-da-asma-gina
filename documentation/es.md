@@ -71,3 +71,28 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Asma bien controlada
+
+Mantener el tratamiento; considerar reducir el escalón si está controlada durante 3 meses.
+
+
+### 2
+
+Asma parcialmente controlada
+
+Revisar la técnica inhalatoria, la adherencia, las comorbilidades y los factores de riesgo antes de subir de escalón.
+
+
+### 3
+
+Asma no controlada
+
+Revisar la técnica, la adherencia y los desencadenantes; considerar subir de escalón el tratamiento.
+
